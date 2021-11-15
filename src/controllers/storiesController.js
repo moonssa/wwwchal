@@ -2,13 +2,13 @@
 
 export const home = (req,res) => res.send("Home stories");
 export const trending = (req,res) => res.send("Trending stories");
-export const newest = (req, res) => res.send("The Newest stories");
+export const newStories = (req, res) => res.send("The Newest stories");
 
-export const see = (req, res) => {
+export const seeStory = (req, res) => {
     res.send(`See story #${req.params.id}`);
 } 
 
-export const edit = (req, res) => {
+export const editStory = (req, res) => {
     res.send(`Edit a story #${req.params.id}`);
 }
 
